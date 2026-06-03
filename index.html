@@ -160,6 +160,36 @@
             color: #42a5f5;
         }
 
+        .tech-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 12px 0 16px 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #262626;
+            color: #d0d0d0;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            border: 1px solid #333;
+            transition: all 0.2s ease;
+        }
+
+        .badge:hover {
+            background: #333;
+            color: #e0e0e0;
+            border-color: #404040;
+        }
+
+        .item p {
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
         @media print {
             body {
                 background: white;
@@ -240,22 +270,34 @@
         </div>
 
         <div class="secao">
-            <div class="titulo-secao">Habilidades</div>
+            <div class="titulo-secao">Habilidades & Competências</div>
             
-            <div class="categoria">
-                <span class="categoria-titulo">Linguagens de Programação:</span> Python, JavaScript, HTML, CSS
-            </div>
+            <div class="item">
+                <p><strong>Linguagens & Ferramentas:</strong></p>
+                <div class="tech-badges">
+                    <span class="badge">Python</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">HTML5 / CSS3</span>
+                    <span class="badge">Git & GitHub</span>
+                    <span class="badge">VS Code</span>
+                </div>
 
-            <div class="categoria">
-                <span class="categoria-titulo">Ferramentas e Plataformas:</span> Git/GitHub, VS Code, Windows
-            </div>
+                <p><strong>Engenharia de Software & Lógica:</strong></p>
+                <div class="tech-badges">
+                    <span class="badge">Desenvolvimento de Algoritmos</span>
+                    <span class="badge">Estruturas de Dados (Listas/Dicionários)</span>
+                    <span class="badge">Sanitização & Validação de Dados</span>
+                    <span class="badge">Tratamento de Erros (Try/Except)</span>
+                    <span class="badge">Modularização & Clean Code</span>
+                    <span class="badge">Robustez de Software</span>
+                </div>
 
-            <div class="categoria">
-                <span class="categoria-titulo">Competências Técnicas:</span> Desenvolvimento de Algoritmos, Manipulação de Estruturas de Dados (Listas e Dicionários), Sanitização e Validação de Entradas, Tratamento de Erros e Robustez de Software (Try/Except), Modularização e Reutilização de Código.
-            </div>
-
-            <div class="categoria">
-                <span class="categoria-titulo">Soft Skills:</span> Trabalho em Equipe, Comunicação, Aprendizado Rápido
+                <p><strong>Soft Skills:</strong></p>
+                <div class="tech-badges">
+                    <span class="badge">Autonomia & Resolução de Problemas</span>
+                    <span class="badge">Orientação a Feedback</span>
+                    <span class="badge">Aprendizado Ágil</span>
+                </div>
             </div>
         </div>
 
