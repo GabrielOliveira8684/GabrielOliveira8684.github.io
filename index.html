@@ -87,6 +87,26 @@
         .item-descricao {
             font-size: 13px;
             color: #000;
+            line-height: 1.5;
+        }
+
+        .item-descricao-texto {
+            margin-bottom: 8px;
+        }
+
+        .item-destaque {
+            font-size: 12px;
+            color: #333;
+            margin-top: 6px;
+            padding-left: 15px;
+            border-left: 2px solid #ddd;
+        }
+
+        .item-tech {
+            font-size: 12px;
+            color: #555;
+            margin-top: 6px;
+            font-weight: 500;
         }
 
         .habilidades-lista {
@@ -178,21 +198,40 @@
             <div class="titulo-secao">Projetos</div>
             
             <div class="item">
-                <div class="item-titulo">Conversor de Unidades</div>
+                <div class="item-titulo">Conversor de Unidades Multicategoria</div>
                 <div class="item-info">GitHub: <a href="https://github.com/GabrielOliveira8684/Conversor-de-unidades">github.com/GabrielOliveira8684/Conversor-de-unidades</a></div>
-                <div class="item-descricao">Sistema de conversão em Python para distância, moeda, tempo, temperatura e massa. Desenvolvido aplicando conceitos de funções puras e tratamento de exceções, com validação robusta de entrada para melhorar confiabilidade.</div>
+                <div class="item-descricao">
+                    <div class="item-descricao-texto">Engenharia de um sistema modular para conversão de grandezas físicas e financeiras (Distância, Moedas, Tempo, Temperatura e Massa) via terminal. O software centraliza regras de negócio complexas por meio de funções puras e dicionários de mapeamento bidirecional.</div>
+                    <div class="item-destaque">
+                        <strong>Destaques:</strong> Modularização com funções dedicadas para cada conversão • Validação robusta de entradas com loops de verificação • Lógicas financeiras dinâmicas com matrizes de taxas
+                    </div>
+                    <div class="item-tech"><strong>Tech:</strong> Python, Dicionários, Controle de Fluxo</div>
+                </div>
             </div>
 
             <div class="item">
-                <div class="item-titulo">Jogo de Perguntas</div>
+                <div class="item-titulo">Jogo de Perguntas (Quiz System Interativo)</div>
                 <div class="item-info">GitHub: <a href="https://github.com/GabrielOliveira8684/jogo-de-perguntas">github.com/GabrielOliveira8684/jogo-de-perguntas</a></div>
-                <div class="item-descricao">Aplicação interativa em Python com sistema de perguntas, pontuação e controle de fluxo. Implementação de conceitos como condicionais, loops e entrada/saída de dados para experiência de usuário clara e responsiva.</div>
+                <div class="item-descricao">
+                    <div class="item-descricao-texto">Aplicação interativa focada no ensino de conceitos da linguagem Python. O grande diferencial do projeto está na lógica de embaralhamento de opções e renderização dinâmica na tela, garantindo que o jogo nunca se repita na mesma ordem.</div>
+                    <div class="item-destaque">
+                        <strong>Destaques:</strong> Matrizes bidimensionais para indexação de perguntas e alternativas • Biblioteca random com shuffle para aleatoriedade garantida • Detecção automática de SO (Windows/Linux/Mac) para limpeza de tela
+                    </div>
+                    <div class="item-tech"><strong>Tech:</strong> Python, Matrizes, Bibliotecas Nativas (os, platform, random)</div>
+                </div>
             </div>
 
             <div class="item">
-                <div class="item-titulo">Lista de Tarefas</div>
+                <div class="item-titulo">Gerenciador de Tarefas com Persistência JSON</div>
                 <div class="item-info">GitHub: <a href="https://github.com/GabrielOliveira8684/Lista-de-Tarefas-TO-DO-LIST">github.com/GabrielOliveira8684/Lista-de-Tarefas-TO-DO-LIST</a></div>
-                <div class="item-descricao">Aplicação em Python criada para gerenciamento e organização de tarefas diárias com sistema de salvamento automático. O projeto conta com funções de adicionar listar concluir e excluir tarefas salvando tudo diretamente em um arquivo local para não perder o progresso ao fechar o programa. O sistema roda direto no terminal com interface simples salvamento automático em tempo real e tratamento de erros para evitar que o programa feche sozinho por comandos inválidos.</div>
+                <div class="item-descricao">
+                    <div class="item-descricao-texto">Aplicação no estilo To-Do List focada no gerenciamento de estado de tarefas (Completas e Incompletas). O sistema simula o comportamento de um banco de dados local, garantindo que nenhuma informação seja perdida ao encerrar o programa.</div>
+                    <div class="item-destaque">
+                        <strong>Destaques:</strong> Persistência com JSON em tempo real no disco • Tratamento robusto de exceções (ValueError, IndexError) • Manipulação avançada de listas com enumerate() e pop()
+                    </div>
+                    <div class="item-tech"><strong>Tech:</strong> Python, JSON, File I/O, Try/Except, Manipulação de Coleções</div>
+                </div>
+            </div>
         </div>
 
         <div class="secao">
